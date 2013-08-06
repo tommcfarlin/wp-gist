@@ -14,14 +14,25 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 /*
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ CONTENTS /\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\
 
-    1. Constructor
-    2. Actions
-    3. Shortcodes
-    4. Instantiation
+    1. Definitions
+    2. Constructor
+    3. Actions
+    4. Shortcodes
+    5. Instantiation
 
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
 */
 
+/* Definitions
+---------------------------------------------------------------------------------- */
+
+/*
+ *  Defines versions.
+ *
+ * This is used for cache-busting stylesheets, JavaScript, and for serializing the
+ * version in the database.
+ */
+define( 'WORDPRESS_GIST_VERSION', '2.0.0' );
 
 class WordPress_Gist {
 
@@ -50,9 +61,8 @@ class WordPress_Gist {
      */
     public function wordpress_gist_enqueue_scripts() {
 
-        // Load plugin styles.
-        wp_register_style( 'wordpress-gist-style', plugins_url( 'wordpress-gist/css/plugin.css' ) );
-        wp_enqueue_style( 'wordpress-gist-style' );
+        // Plugin styles.
+        wp_enqueue_style( 'wordpress-gist-style', plugins_url( 'wordpress-gist/css/plugin.css' ), false, WORDPRESS_GIST_VERSION );
 
     } // end wordpress_gist_enqueue_scripts
 
