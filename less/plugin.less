@@ -6,25 +6,35 @@
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
 */
 
-
 /* Overrides
 ---------------------------------------------------------------------------------- */
 
-/* Necessary Standard and Bootstrap style overrides. */
+/*
+ * Really hate using `!important`, but there is
+ * no better way to ensure that all themes
+ * respect the explicit styles needed to make
+ * Gist's look good inside of WordPress.
+ */
 
-#main {
-    .gist {
-        table {
-            border: none;
-            margin: 0;
+.gist {
 
-            td {
-                line-height: 20px;
-            }
-        }
+    table {
 
-        pre {
-            white-space: pre;
-        }
-    }
-}
+        border: none !important;
+        margin: 0 !important;
+
+        td {
+
+            line-height: 20px !important;
+
+        } // end td
+
+    } // end table
+
+    pre.line-pre {
+
+        white-space: pre !important;
+
+    } // end pre.line-pre
+
+} // end .gist
