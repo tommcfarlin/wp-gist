@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.1 (August 8th, 2013)
+
+* Updates README to include the preview screenshot. (#9)
+* Updates preview screenshot since GitHub changed their styling. (#10)
+
 ## 2.0.0 (August 7th, 2013)
 
 * Adds cache busting versioning. (#4)
