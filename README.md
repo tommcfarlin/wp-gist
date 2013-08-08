@@ -1,12 +1,12 @@
-# Standard Gist
+# WordPress Gist
 
 ## Description
 
-Adds support for [GitHib Gist](https://gist.github.com/) embeds to Standard.
+Adds support for [GitHib Gist](https://gist.github.com/) embeds in WordPress.
 
 Two primary features.
 
-1. Adds styles to make GitHub Gists look pretty within Standard.
+1. Adds styles to make GitHub Gists look pretty within WordPress.
 2. Adds shortcode capabilities to embed GitHub Gists into posts and pages, even support for specific files within a Gist.
 
 ## Usage
@@ -27,29 +27,32 @@ There are two ways to install WordPress plugins: via the WordPress Dashboard (re
 
 ### Using the WordPress Dashboard
 
-1. Download the [plugins](https://github.com/eightbit/plugins/zipball/master).
-2. Unzip the `eightbit-plugins.zip``` archive on your computer.
-3. Locate the `standard-gist` directory within the `eightbit-plugins` directory.
-4. Rezip the `standard-gist` directory.
-5. Locate the **Plugins** menu.
+1. Download the [plugin](https://github.com/manovotny/wordpress-gist/archive/master.zip).
+2. In the WordPress Dashboard, locate the **Plugins** menu.
 6. In the **Plugins** menu, click on **Add New**.
 7. On the **Add New** page, click on the **Upload** link at the top of the page.
-8. On the **Upload** page, locate the `standard-gist.zip` archive (zip) on your computer (created in Step #4) and click **Install Now**.
+8. On the **Upload** page, locate the `wordpress-gist-master.zip` archive (zip) on your computer ()downloaded in Step #1) and click **Install Now**.
 9. On the successful upload page, click **Activate**.
 
 ### Using FTP
 
-1. Download the [plugins](https://github.com/eightbit/plugins/zipball/master).
-2. Unzip the `eightbit-plugins.zip` archive on your computer.
-3. Locate the `standard-gist` directory within the `eightbit-plugins` directory.
-4. Connect to your server via FTP.
-5. Upload the `standard-gist` directory to the `/wp-content/plugins/` directory on your server.
+1. Download the [plugin](https://github.com/manovotny/wordpress-gist/archive/master.zip).
+2. Unzip the `wordpress-gist-master.zip` archive on your computer.
+3. Connect to your server via S/FTP.
+5. Upload the `wordpress-gist-master` directory to the `/wp-content/plugins/` directory on your server.
 6. In the WordPress Dashboard, navigate to the **Installed Plugins** page under the **Plugins** menu.
-7. Locate **Standard Gist** and click **Activate**.
+7. Locate **WordPress Gist** and click **Activate**.
 
 ## Compatibility
 
-Works with Standard 3.0 - 3.2.
+This plugin has been tested with the following. 
+
+*Other versions / themes may or may not work.*
+
+* [WordPress](http://wordpress.org) 3.5+
+* Themes:
+    * [Standard](http://standardtheme.com) 3.0+
+    * [TwentyThirteen](http://theme.wordpress.com/themes/twentythirteen/)
 
 ## Credit
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.0 (August 7th, 2013)
+
+* Adds cache busting versioning. (#4)
+* Adds support for all themes. (#1)
+* Updates plugin name. (#5)
+* Updates plugin to conform to WordPress standards / best practices. (#3)
+* Updates README. (#2)
+
 ## 1.0.2 (March 12th, 2013)
 
 * Fixes line numbers not lining up with code lines.
