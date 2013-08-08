@@ -19,6 +19,10 @@ If your Gist has [multiple files](https://gist.github.com/manovotny/5014426), yo
 
 `[gist url="https://gist.github.com/manovotny/5014426" file="find-this-line-in-load-styles.php"]`
 
+## Screenshot
+
+[![WordPress Gist](screenshot-1.png)](https://github.com/manovotny/wordpress-gist)
+
 ## Installation
 
 There are two ways to install WordPress plugins: via the WordPress Dashboard (recommended) and via FTP. 
