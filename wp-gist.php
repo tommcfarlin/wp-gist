@@ -1,20 +1,20 @@
 <?php
 /**
- * WordPress Gist.
+ * WP Gist.
  *
  * Adds support for GitHub Gist embeds in WordPress.
  *
- * @package     WordPress_Gist
+ * @package     WP_Gist
  * @author      Michael Novotny <manovotny@gmail.com>
  * @license     GPL-3.0+
- * @link        https://github.com/manovotny/wordpress-gist
+ * @link        https://github.com/manovotny/wp-gist
  * @copyright   2013 Michael Novotny
  *
  * @wordpress-plugin
- * Plugin Name: WordPress Gist
- * Plugin URI:  https://github.com/manovotny/wordpress-gist
+ * Plugin Name: WP Gist
+ * Plugin URI:  https://github.com/manovotny/wp-gist
  * Description: Adds support for GitHub Gist embeds in WordPress.
- * Version:     2.0.0
+ * Version:     2.1.0
  * Author:      Michael Novotny
  * Author URI:  http://manovotny.com
  * Text Domain: English
@@ -46,7 +46,7 @@ if ( ! defined( 'WPINC' ) ) {
 ---------------------------------------------------------------------------------- */
 
 // Include plugin files.
-require_once( plugin_dir_path( __FILE__ ) . 'classes/class-wordpress-gist.php' );
+require_once( plugin_dir_path( __FILE__ ) . 'classes/class-wp-gist.php' );
 
 // Create plugin instance.
-WordPress_Gist::get_instance();
+WP_Gist::get_instance();

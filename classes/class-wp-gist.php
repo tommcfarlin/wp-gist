@@ -1,11 +1,11 @@
 <?php
 /**
- * WordPress_Gist.
+ * WP_Gist.
  *
- * @package     WordPress_Gist
+ * @package     WP_Gist
  * @author      Michael Novotny <manovotny@gmail.com>
  * @license     GPL-3.0+
- * @link        https://github.com/manovotny/wordpress-gist
+ * @link        https://github.com/manovotny/wp-gist
  * @copyright   2013 Michael Novotny
  */
 
@@ -20,7 +20,7 @@
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
 */
 
-class WordPress_Gist {
+class WP_Gist {
 
     /* Properties
     ---------------------------------------------------------------------------------- */
@@ -29,10 +29,10 @@ class WordPress_Gist {
     ---------------------------------------------- */
 
     /**
-     * Instance of the WordPress_Gist class.
+     * Instance of the WP_Gist class.
      *
      * @access      protected static
-     * @var         WordPress_Gist
+     * @var         WP_Gist
      *
      * @since       2.0.0
      * @version     1.0.0
@@ -42,7 +42,7 @@ class WordPress_Gist {
     /**
      * Get accessor method for instance property.
      *
-     * @return      WordPress_Gist  Instance of the WordPress_Gist class.
+     * @return      WP_Gist  Instance of the WP_Gist class.
      *
      * @since       2.0.0
      * @version     1.0.0
@@ -74,7 +74,7 @@ class WordPress_Gist {
      * @since       2.0.0
      * @version     1.0.0
      */
-    protected $slug = 'wordpress-gist';
+    protected $slug = 'wp-gist';
 
     /* Version
     ---------------------------------------------- */
@@ -88,7 +88,7 @@ class WordPress_Gist {
      * @since       2.0.0
      * @version     1.0.0
      */
-    protected $version = '2.0.0';
+    protected $version = '2.1.0';
 
     /* Constructor
     ---------------------------------------------------------------------------------- */
@@ -101,10 +101,10 @@ class WordPress_Gist {
     function __construct() {
 
         // Add shortcode hook.
-        add_shortcode( 'gist', array( $this, 'wordpress_gist_shortcode' ) );
+        add_shortcode( 'gist', array( $this, 'wp_gist_shortcode' ) );
 
         // Register styles.
-        add_action( 'wp_enqueue_scripts', array( $this, 'wordpress_gist_styles' ), 1000 );
+        add_action( 'wp_enqueue_scripts', array( $this, 'wp_gist_styles' ), 1000 );
 
     } // end constructor
 
@@ -117,12 +117,12 @@ class WordPress_Gist {
      * @since       1.0.0
      * @version     2.0.0
      */
-    public function wordpress_gist_styles() {
+    public function wp_gist_styles() {
 
         // Plugin styles.
         wp_enqueue_style( $this->slug . '-style', plugins_url( $this->slug . '/css/public.css' ), false, $this->version );
 
-    } // end wordpress_gist_styles
+    } // end wp_gist_styles
 
     /* Shortcodes
     ---------------------------------------------------------------------------------- */
@@ -135,7 +135,7 @@ class WordPress_Gist {
      * @since       1.0.0
      * @version     2.0.0
      */
-    function wordpress_gist_shortcode( $attributes, $content = null ) {
+    function wp_gist_shortcode( $attributes, $content = null ) {
 
         // Extract shortcode attributes.
         extract( shortcode_atts( array( 'url' => '', 'file' => '' ), $attributes ) );
@@ -164,6 +164,6 @@ class WordPress_Gist {
         // Construct Gist script and return.
         return '<script src="' . $url . '"></script>';
 
-    } // end wordpress_gist_shortcode
+    } // end wp_gist_shortcode
 
 } // end class

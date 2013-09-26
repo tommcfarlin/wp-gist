@@ -1,4 +1,4 @@
-# WordPress Gist
+# WP Gist
 
 ## Description
 
@@ -21,7 +21,7 @@ If your Gist has [multiple files](https://gist.github.com/manovotny/5014426), yo
 
 ## Screenshot
 
-[![WordPress Gist](screenshot-1.png)](https://github.com/manovotny/wordpress-gist)
+[![WP Gist](screenshot-1.png)](https://github.com/manovotny/wp-gist)
 
 ## Installation
 
@@ -31,21 +31,21 @@ There are two ways to install WordPress plugins: via the WordPress Dashboard (re
 
 ### Using the WordPress Dashboard
 
-1. Download the [plugin](https://github.com/manovotny/wordpress-gist/archive/master.zip).
+1. Download the [plugin](https://github.com/manovotny/wp-gist/archive/master.zip).
 2. In the WordPress Dashboard, locate the **Plugins** menu.
 6. In the **Plugins** menu, click on **Add New**.
 7. On the **Add New** page, click on the **Upload** link at the top of the page.
-8. On the **Upload** page, locate the `wordpress-gist-master.zip` archive (zip) on your computer ()downloaded in Step #1) and click **Install Now**.
+8. On the **Upload** page, locate the `wp-gist-master.zip` archive (zip) on your computer ()downloaded in Step #1) and click **Install Now**.
 9. On the successful upload page, click **Activate**.
 
 ### Using FTP
 
-1. Download the [plugin](https://github.com/manovotny/wordpress-gist/archive/master.zip).
-2. Unzip the `wordpress-gist-master.zip` archive on your computer.
+1. Download the [plugin](https://github.com/manovotny/wp-gist/archive/master.zip).
+2. Unzip the `wp-gist-master.zip` archive on your computer.
 3. Connect to your server via S/FTP.
-5. Upload the `wordpress-gist-master` directory to the `/wp-content/plugins/` directory on your server.
+5. Upload the `wp-gist-master` directory to the `/wp-content/plugins/` directory on your server.
 6. In the WordPress Dashboard, navigate to the **Installed Plugins** page under the **Plugins** menu.
-7. Locate **WordPress Gist** and click **Activate**.
+7. Locate **WP Gist** and click **Activate**.
 
 ## Compatibility
 
