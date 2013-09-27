@@ -1,0 +1,1 @@
+exclude: ["bower.json", "dev", "Gruntfile.js", "grunticon", "less", "lib", "loader.html", "node_modules", "package.json", "preview.html", "wp-gist.iml"]

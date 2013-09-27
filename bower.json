@@ -1,0 +1,16 @@
+{
+    "name": "wp-gist",
+    "version": "2.1.0",
+    "dependencies": {
+        "html5shiv": "3.7.0",
+        "respond": "1.3.0"
+    },
+    "exportsOverride": {
+        "html5shiv": {
+            "": ["dist/html5shiv.js", "dist/html5shiv-printshiv.js"]
+        },
+        "respond": {
+            "": ["respond.src.js"]
+        }
+    }
+}
