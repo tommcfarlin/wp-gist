@@ -19,14 +19,14 @@ module.exports = function (grunt) {
             options: {
                 separator: ';'
             },
-            site: {
+            main: {
                 src: [
                     'lib/jquery/jquery.js',
                     'lib/bootstrap/bootstrap.js'
                 ],
-                dest: 'js/dev/site.js'
+                dest: 'js/dev/main.js'
             },
-            siteIE: {
+            mainIE: {
                 src: [
                     'lib/html5shiv/html5shiv.js',
                     'lib/html5shiv/html5shiv-printshiv.js',
@@ -52,7 +52,7 @@ module.exports = function (grunt) {
             }
         },
         less: {
-            site: {
+            main: {
                 options: {
                     ieCompat: true,
                     paths: [
@@ -63,7 +63,7 @@ module.exports = function (grunt) {
                     yuicompress: true
                 },
                 files: {
-                    'css/site.min.css': 'less/site.less'
+                    'css/main.min.css': 'less/main.less'
                 }
             }
         },
@@ -71,14 +71,14 @@ module.exports = function (grunt) {
             options: {
                 report: 'gzip'
             },
-            site: {
+            main: {
                 files: {
-                    'js/site.min.js': [
-                        'js/dev/site.js'
+                    'js/main.min.js': [
+                        'js/dev/main.js'
                     ]
                 }
             },
-            siteIE: {
+            mainIE: {
                 files: {
                     'js/ie.min.js': [
                         'js/dev/ie.js'
@@ -124,7 +124,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-grunticon');
 
-    // Default task(s).
+    // Default tasks.
     grunt.registerTask('default', [
         'grunticon',
         'less',
