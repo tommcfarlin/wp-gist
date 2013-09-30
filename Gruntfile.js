@@ -24,7 +24,7 @@ module.exports = function (grunt) {
                     'lib/jquery/jquery.js',
                     'lib/bootstrap/bootstrap.js'
                 ],
-                dest: 'js/dev/main.js'
+                dest: 'js/uncompressed/script.js'
             },
             mainIE: {
                 src: [
@@ -32,11 +32,11 @@ module.exports = function (grunt) {
                     'lib/html5shiv/html5shiv-printshiv.js',
                     'lib/respond/respond.src.js'
                 ],
-                dest: 'js/dev/ie.js'
+                dest: 'js/uncompressed/script-ie.js'
             }
         },
         grunticon: {
-            less: {
+            main: {
                 options: {
                     cssdimensions: true,
                     cssprefix: '',
@@ -63,7 +63,7 @@ module.exports = function (grunt) {
                     yuicompress: true
                 },
                 files: {
-                    'css/main.min.css': 'less/main.less'
+                    'css/style.min.css': 'less/style.less'
                 }
             }
         },
@@ -73,15 +73,15 @@ module.exports = function (grunt) {
             },
             main: {
                 files: {
-                    'js/main.min.js': [
-                        'js/dev/main.js'
+                    'js/script.min.js': [
+                        'js/uncompressed/script.js'
                     ]
                 }
             },
             mainIE: {
                 files: {
-                    'js/ie.min.js': [
-                        'js/dev/ie.js'
+                    'js/script-ie.min.js': [
+                        'js/uncompressed/script-ie.js'
                     ]
                 }
             }

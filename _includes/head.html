@@ -6,12 +6,37 @@
 
     <title>{{ page.title }}</title>
 
-    <link href="{{ page.base_url }}css/main.min.css" rel="stylesheet">
+    <link href="{{ page.base_url }}css/style.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-        <script src="{{ page.base_url }}js/ie.min.js"></script>
+        <script src="{{ page.base_url }}js/script-ie.min.js"></script>
     <![endif]-->
+
+    <!-- Grunticon -->
+    <script>
+        window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var r=t.document.createElement("link"),a=t.document.getElementsByTagName("script")[0];r.rel="stylesheet",r.href=e[o&&n?0:o?1:2],a.parentNode.insertBefore(r,a)},r=new t.Image;r.onerror=function(){o(!1)},r.onload=function(){o(1===r.width&&1===r.height)},r.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+        grunticon( [ "images/svg.css", "images/png.css", "images/fallback.css" ] );
+    </script>
+    <noscript>
+        <link href="images/fallback.css" rel="stylesheet">
+    </noscript>
+
+    <!-- Google Fonts -->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: [ 'Roboto+Condensed:300,400:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
 
     <!-- Google Analytics -->
     <script>
