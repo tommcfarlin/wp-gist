@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0 (September 30th, 2013)
+
+* Renames plugin to conform to WordPress guidelines. (#11)
+
 ## 2.0.1 (August 8th, 2013)
 
 * Updates README to include the preview screenshot. (#9)
