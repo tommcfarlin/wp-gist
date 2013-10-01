@@ -1,0 +1,23 @@
+{
+  "name": "wp-gist",
+  "title": "WP Gist",
+  "description": "Adds support for GitHub Gist embeds in WordPress.",
+  "version": "2.1.0",
+  "homepage": "http://manovotny.github.io/wp-gist/",
+  "author": {
+    "name": "Michael Novotny",
+    "email": "manovotny@gmail.com",
+    "url": "http://manovotny.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manovotny/wp-gist.git"
+  },
+  "devDependencies": {
+    "matchdep": "~0.1.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-less": "~0.7.0"
+  },
+  "keywords": []
+}
