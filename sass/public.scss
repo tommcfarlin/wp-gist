@@ -1,22 +1,26 @@
 /*
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ CONTENTS /\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
 
-    1. Overrides
+    Public facing styles.
 
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
 */
 
-/* Overrides
----------------------------------------------------------------------------------- */
-
 /*
- * Really hate using `!important`, but there is
- * no better way to ensure that all themes
- * respect the explicit styles needed to make
- * Gist's look good inside of WordPress.
+ * Really hate using `!important`, but there is no better way to ensure that all
+ * themes respect the explicit styles needed to make Gist's look good inside of
+ * WordPress.
  */
 
 .gist {
+
+    font-size: 14px;
+
+    pre.line-pre {
+
+        white-space: pre !important;
+
+    } // pre.line-pre
 
     table {
 
@@ -27,14 +31,20 @@
 
             line-height: 20px !important;
 
-        } // end td
+        } // td
 
-    } // end table
+    } // table
 
-    pre.line-pre {
+    .gist-file .gist-data .line-numbers {
 
-        white-space: pre !important;
+        border: none;
 
-    } // end pre.line-pre
+    } // .gist-file .gist-data .line-numbers
 
-} // end .gist
+    .line-data {
+
+        border: none;
+
+    } // .line-data
+
+} // .gist
