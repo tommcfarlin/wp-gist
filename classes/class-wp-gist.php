@@ -88,7 +88,7 @@ class WP_Gist {
      * @since       2.0.0
      * @version     1.0.0
      */
-    protected $version = '2.1.0';
+    protected $version = '2.2.0';
 
     /* Constructor
     ---------------------------------------------------------------------------------- */
