@@ -1,9 +1,10 @@
-.michael-novotny-logo-white { background-image: url(png/michael-novotny-logo-white.png); background-repeat: no-repeat; width: 41px; height: 15px;}
+.michael-novotny-logo-white {background-image: url('png/michael-novotny-logo-white.png'); background-repeat: no-repeat; width: 41px; height: 15px;}
 
-.social-email { background-image: url(png/social-email.png); background-repeat: no-repeat; width: 16px; height: 16px;}
+.social-email {background-image: url('png/social-email.png'); background-repeat: no-repeat; width: 16px; height: 16px;}
 
-.social-github { background-image: url(png/social-github.png); background-repeat: no-repeat; width: 16px; height: 16px;}
+.social-github {background-image: url('png/social-github.png'); background-repeat: no-repeat; width: 16px; height: 16px;}
 
-.social-twitter { background-image: url(png/social-twitter.png); background-repeat: no-repeat; width: 16px; height: 16px;}
+.social-twitter {background-image: url('png/social-twitter.png'); background-repeat: no-repeat; width: 16px; height: 16px;}
 
-.wp-gist-screenshot { background-image: url(png/wp-gist-screenshot.png); background-repeat: no-repeat; width: 600px; height: 309px;}
+.wp-gist-screenshot {background-image: url('png/wp-gist-screenshot.png'); background-repeat: no-repeat; width: 600px; height: 309px;}
+

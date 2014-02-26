@@ -1,0 +1,92 @@
+/*
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
+
+    Mixins
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
+*/
+
+@import 'placeholders';
+
+
+/* Box Shadow
+---------------------------------------------- */
+
+@mixin box-shadow($shadow: 5px 5px 5px rgba(40, 40, 40, 0.25)) {
+
+    -moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+
+} // box-shadow
+
+/* Gradient
+---------------------------------------------- */
+
+@mixin gradient($topColor, $bottomColor) {
+
+    background-color: $bottomColor;
+    background-image: -moz-linear-gradient(top, $topColor, $bottomColor);
+    background-image: -o-linear-gradient(top, $topColor, $bottomColor);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($topColor), to($bottomColor));
+    background-image: -webkit-linear-gradient(top, $topColor, $bottomColor);
+    background-image: linear-gradient(to bottom, $topColor, $bottomColor);
+    background-repeat: repeat-x;
+
+} // gradient
+
+/* Inline List
+---------------------------------------------- */
+
+@mixin inline-list($spacing: 20px) {
+
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 0;
+
+    @extend %clearfix;
+
+    li {
+
+        float: left;
+        margin-right: $spacing;
+
+        &:last-child {
+
+            margin-right: 0;
+
+        }
+
+    } // li
+
+} // inline-list
+
+/* Opacity
+---------------------------------------------- */
+
+@mixin opacity($opacity) {
+
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); // IE8
+
+} // opacity
+
+/* Selection
+---------------------------------------------- */
+
+@mixin selection($color: #b3d4fd) {
+
+    ::selection {
+
+        background: $color;
+
+    } // ::selection
+
+    ::-moz-selection {
+
+        background: $color;
+
+    } // ::-moz-select
+
+} // selection

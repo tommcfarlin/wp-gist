@@ -1,0 +1,76 @@
+/*
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
+
+    Typography Styles
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
+*/
+
+@import 'colors';
+@import 'fonts';
+@import 'sizes';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: $heading-font;
+    margin-bottom: $spacing;
+
+} // h1, h2, h3, h4, h5, h6
+
+h1,
+h2,
+h3 {
+
+    font-weight: 300;
+
+} // h1, h2, h3
+
+h4,
+h5,
+h6 {
+
+    font-weight: 400;
+
+} // h4, h5, h6
+
+h1 {
+
+    font-size: 65px;
+    margin: 100px 0 0;
+
+} // h1
+
+h2 {
+
+    font-size: 25px;
+    margin: 0;
+
+} // h2
+
+h3 {
+
+    font-weight: 400;
+
+} // h3
+
+code {
+
+    padding: 2px 4px;
+    color: $code;
+    background-color: $code-background;
+    border: 1px solid $code-border;
+    word-wrap: break-word;
+
+    &.block {
+
+        display: block;
+        margin-bottom: $spacing;
+
+    } // &.block
+
+} // code

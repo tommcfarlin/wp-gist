@@ -1,0 +1,65 @@
+/*
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
+
+    Footer Styles
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
+*/
+
+@import 'colors';
+@import 'fonts';
+@import 'mixins';
+@import 'placeholders';
+@import 'sizes';
+
+footer {
+
+    background-color: $dark-gray;
+    color: $light-gray;
+    font-family: $heading-font;
+    font-weight: 400;
+    line-height: 1.1;
+    padding: $spacing 0 0;
+    text-transform: uppercase;
+
+    .col-md-10 {
+
+        @extend %clearfix;
+
+    } // .col-md-10
+
+    ul {
+
+        @include inline-list();
+
+        margin-top: 7px;
+
+        &.brand li {
+
+            margin-right: 5px;
+
+        } // &.brand li
+
+        &.social {
+
+            float: right;
+
+        } // &.social
+
+    } // ul
+
+    a {
+
+        color: $light-gray;
+
+        &:hover > * {
+
+            @include opacity(0.7);
+
+            color: $light-gray;
+
+        } // &:hover
+
+    } // a
+
+} // footer

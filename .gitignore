@@ -1,9 +1,21 @@
-# IntelliJ
-*.iml
-.idea
+# Bower
+bower_components
 
-# Grunt
-node_modules
+# IntelliJ
+.idea
+*.iml
 
 # Jekyll
 _site
+
+# Node / Grunt
+node_modules
+
+# OS X
+.DS_Store
+
+# PHP
+*.log
+
+# Processing / Build
+temp

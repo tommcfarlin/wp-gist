@@ -1,6 +1,6 @@
 {
   "name": "wp-gist",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "GitHub Gist's for WordPress",
   "author": "Michael Novotny <http://manovotny.com/>",
   "homepage": "http://manovotny.github.io/wp-gist/",
@@ -9,13 +9,21 @@
     "url": "https://github.com/manovotny/wp-gist/"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-bower-task": "~0.3.2",
-    "grunt-contrib-less": "~0.7.0",
-    "grunt-contrib-uglify": "~0.2.2",
-    "grunt-contrib-watch": "~0.5.2",
-    "grunt-grunticon": "~0.6.5",
-    "grunt-jslint": "~1.0.0",
-    "grunt-contrib-concat": "~0.3.0"
+    "grunt": "~0.4.2",
+    "grunt-concurrent": "~0.4.3",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.8.0",
+    "grunt-contrib-imagemin": "~0.5.0",
+    "grunt-contrib-sass": "~0.7.2",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-grunticon": "~1.0.0",
+    "grunt-jslint": "~1.1.4",
+    "grunt-newer": "~0.6.1",
+    "grunt-svgmin": "~0.3.1",
+    "grunt-text-replace": "~0.3.11",
+    "load-grunt-tasks": "~0.3.0",
+    "time-grunt": "~0.2.9"
   }
 }

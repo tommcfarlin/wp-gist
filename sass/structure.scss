@@ -1,0 +1,33 @@
+/*
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
+
+    Structure Styles
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
+*/
+
+@import 'colors';
+@import 'fonts';
+@import 'mixins';
+@import 'sizes';
+
+@include selection($selection);
+
+body {
+
+    background-color: $light-gray;
+    font-family: $body-font;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.7;
+    min-width: 320px;
+
+} // body
+
+ol,
+p,
+ul {
+
+    margin-bottom: $spacing;
+
+} // ol, p, ul

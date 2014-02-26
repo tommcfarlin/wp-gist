@@ -1,0 +1,49 @@
+/*
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
+
+    Index Styles
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
+*/
+
+@import 'borders';
+@import 'colors';
+@import 'mixins';
+
+.description {
+
+    background-color: $white;
+    border-bottom: $section-border;
+    padding: 30px 0 20px;
+    text-align: center;
+    width: 100%;
+
+    .actions {
+
+        @include inline-list();
+
+        display: inline-block;
+        margin-top: 15px;
+
+    } // .actions
+
+} // .description
+
+.main {
+
+    margin-bottom: 50px;
+
+    section {
+
+        margin-top: 50px;
+
+        h3 {
+
+            border-bottom: $heading-border;
+            padding-bottom: 5px;
+
+        } // h3
+
+    } // section
+
+} // .main
