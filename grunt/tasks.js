@@ -2,29 +2,30 @@ module.exports = function (grunt) {
 
     'use strict';
 
-    // Default task.
+    // Default.
     grunt.registerTask('default', [
         'build',
         'watch'
     ]);
 
-    // Build task.
+    // Build.
     grunt.registerTask('build', [
         'clean:before',
         'concurrent:css',
         'concurrent:images',
         'concurrent:js',
         'concurrent:version',
-        'clean:after'
+        'clean:after',
+        'assemble'
     ]);
 
-    // CSS task.
+    // CSS.
     grunt.registerTask('css', [
         'newer:sass',
         'newer:cssmin'
     ]);
 
-    // Images task.
+    // Images.
     grunt.registerTask('images', [
         'newer:svgmin',
         'newer:imagemin:grunticon',
@@ -32,14 +33,14 @@ module.exports = function (grunt) {
         'newer:imagemin:images'
     ]);
 
-    // JavaScript task.
+    // JavaScript.
     grunt.registerTask('js', [
         'newer:jslint',
         'newer:concat',
         'newer:uglify'
     ]);
 
-    // Versioning task.
+    // Versioning.
     grunt.registerTask('version', [
         'replace'
     ]);
