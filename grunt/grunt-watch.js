@@ -16,7 +16,6 @@ module.exports = function (grunt) {
         css: {
             files: [
                 '<%= config.paths.bower %>/**/*.scss',
-                'css/src/*.css',
                 'sass/**/*.scss'
             ],
             tasks: [
