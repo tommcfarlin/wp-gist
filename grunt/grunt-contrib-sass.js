@@ -5,14 +5,15 @@ module.exports = function (grunt) {
     grunt.config('sass', {
         css: {
             options: {
-                outputStyle: 'compressed'
+                noCache: true,
+                trace: true
             },
             files: [
                 {
                     expand: true,
                     cwd: 'sass',
                     src: ['**/*.scss'],
-                    dest: 'css',
+                    dest: '<%= config.paths.temp %>/css',
                     ext: '.css'
                 }
             ]

@@ -120,7 +120,7 @@ class WP_Gist {
     public function wp_gist_styles() {
 
         // Plugin styles.
-        wp_enqueue_style( $this->slug . '-style', plugins_url( $this->slug . '/css/public.css' ), false, $this->version );
+        wp_enqueue_style( $this->slug . '-style', plugins_url( $this->slug . '/css/style.min.css' ), false, $this->version );
 
     } // end wp_gist_styles
 

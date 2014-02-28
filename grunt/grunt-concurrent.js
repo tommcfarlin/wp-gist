@@ -4,7 +4,6 @@ module.exports = function (grunt) {
 
     grunt.config('concurrent', {
         css: ['css'],
-        js: ['js'],
         version: ['version']
     });
 

@@ -2,31 +2,27 @@ module.exports = function (grunt) {
 
     'use strict';
 
-    // Default task.
+    // Default.
     grunt.registerTask('default', [
         'build',
         'watch'
     ]);
 
-    // Build task.
+    // Build.
     grunt.registerTask('build', [
-        'clean',
+        'clean:before',
         'concurrent:css',
-        'concurrent:js',
-        'concurrent:version'
+        'concurrent:version',
+        'clean:after'
     ]);
 
-    // CSS task.
+    // CSS.
     grunt.registerTask('css', [
-        'newer:sass'
+        'newer:sass',
+        'newer:cssmin'
     ]);
 
-    // JavaScript task.
-    grunt.registerTask('js', [
-        'newer:jslint'
-    ]);
-
-    // Versioning task.
+    // Versioning.
     grunt.registerTask('version', [
         'replace'
     ]);

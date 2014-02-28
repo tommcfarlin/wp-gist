@@ -2,6 +2,15 @@ module.exports = function (grunt) {
 
     'use strict';
 
+    var jsonVersion = {
+            from: '"version": "<%= config.version.from %>"',
+            to: '"version": "<%= config.version.to %>"'
+        },
+        phpVersion = {
+            from: '$version = \'<%= config.version.from %>\'',
+            to: '$version = \'<%= config.version.to %>\''
+        };
+
     grunt.config('replace', {
         package: {
             src: [
@@ -9,8 +18,8 @@ module.exports = function (grunt) {
             ],
             overwrite: true,
             replacements: [{
-                from: '"version": "2.1.0"',
-                to: '"version": "2.2.0"'
+                from: jsonVersion.from,
+                to: jsonVersion.to
             }]
         },
         plugin: {
@@ -19,8 +28,8 @@ module.exports = function (grunt) {
             ],
             overwrite: true,
             replacements: [{
-                from: '$version = \'2.1.0\'',
-                to: '$version = \'2.2.0\''
+                from: phpVersion.from,
+                to: phpVersion.to
             }]
         }
     });

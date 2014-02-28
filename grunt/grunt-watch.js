@@ -10,15 +10,6 @@ module.exports = function (grunt) {
             tasks: [
                 'css'
             ]
-        },
-        js: {
-            files: [
-                'grunt/*.js',
-                'Gruntfile.js'
-            ],
-            tasks: [
-                'build'
-            ]
         }
     });
 
