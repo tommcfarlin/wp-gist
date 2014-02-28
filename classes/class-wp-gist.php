@@ -6,7 +6,7 @@
  * @author      Michael Novotny <manovotny@gmail.com>
  * @license     GPL-3.0+
  * @link        https://github.com/manovotny/wp-gist
- * @copyright   2013 Michael Novotny
+ * @copyright   2014 Michael Novotny
  */
 
 /*

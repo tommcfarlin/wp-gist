@@ -8,14 +8,14 @@
  * @author      Michael Novotny <manovotny@gmail.com>
  * @license     GPL-3.0+
  * @link        https://github.com/manovotny/wp-gist
- * @copyright   2013 Michael Novotny
+ * @copyright   2014 Michael Novotny
  *
  * @wordpress-plugin
  * Plugin Name:         WP Gist
  * Plugin URI:          https://github.com/manovotny/wp-gist
- * GitHub Plugin URI:    manovotny/wp-gist
+ * GitHub Plugin URI:   manovotny/wp-gist
  * Description:         Adds support for GitHub Gist embeds in WordPress.
- * Version:             2.1.0
+ * Version:             2.2.0
  * Author:              Michael Novotny
  * Author URI:          http://manovotny.com
  * Text Domain:         English

@@ -4,6 +4,10 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         config: {
+            copyright: {
+                from: '2013',
+                to: '2014'
+            },
             paths: {
                 temp: 'temp'
             },

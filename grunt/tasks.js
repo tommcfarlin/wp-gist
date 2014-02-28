@@ -12,19 +12,19 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:before',
         'concurrent:css',
-        'concurrent:version',
+        'concurrent:bump',
         'clean:after'
+    ]);
+
+    // Bump.
+    grunt.registerTask('bump', [
+        'replace'
     ]);
 
     // CSS.
     grunt.registerTask('css', [
         'newer:sass',
         'newer:cssmin'
-    ]);
-
-    // Versioning.
-    grunt.registerTask('version', [
-        'replace'
     ]);
 
 };
