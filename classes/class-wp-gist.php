@@ -137,6 +137,14 @@ class WP_Gist {
      */
     function wp_gist_shortcode( $attributes, $content = null ) {
 
+        // Check for content and if content uses the shortcode.
+        if ( empty( $content ) || has_shortcode( $content, $this->shortcode ) ) {
+
+            // No content or content doesn't have shortcode.
+            return '';
+
+        } // end if
+
         // Extract shortcode attributes.
         extract( shortcode_atts( array( 'url' => '', 'file' => '' ), $attributes ) );
 
