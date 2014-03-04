@@ -144,7 +144,7 @@ class WP_Gist {
         if ( empty( $url ) ) {
 
             // No Gist URL.
-            return '';
+            return '<!-- Missing Gist Url -->';
 
         } else {
 
