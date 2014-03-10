@@ -20,22 +20,6 @@ module.exports = function (grunt) {
         };
 
     grunt.config('replace', {
-        class: {
-            src: [
-                'classes/class-wp-gist.php'
-            ],
-            overwrite: true,
-            replacements: [
-                {
-                    from: copyright.from,
-                    to: copyright.to
-                },
-                {
-                    from: versionClass.from,
-                    to: versionClass.to
-                },
-            ]
-        },
         package: {
             src: [
                 'package.json'
@@ -48,6 +32,10 @@ module.exports = function (grunt) {
         },
         plugin: {
             src: [
+                'admin/classes/*.php',
+                'admin/view/*.php',
+                'classes/*.php',
+                'uninstall.php',
                 'wp-gist.php'
             ],
             overwrite: true,
@@ -55,6 +43,10 @@ module.exports = function (grunt) {
                 {
                     from: copyright.from,
                     to: copyright.to
+                },
+                {
+                    from: versionClass.from,
+                    to: versionClass.to
                 },
                 {
                     from: versionPlugin.from,

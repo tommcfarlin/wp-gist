@@ -68,13 +68,13 @@ class WP_Gist {
     /**
      * Plugin unique identifier.
      *
-     * @access      protected
+     * @access      public
      * @var         string
      *
      * @since       2.0.0
      * @version     1.0.0
      */
-    protected $slug = 'wp-gist';
+    public $slug = 'wp-gist';
 
     /* Version
     ---------------------------------------------- */
@@ -88,7 +88,7 @@ class WP_Gist {
      * @since       2.0.0
      * @version     1.0.0
      */
-    protected $version = '2.2.0';
+    protected $version = '3.0.0';
 
     /* Constructor
     ---------------------------------------------------------------------------------- */
@@ -101,7 +101,7 @@ class WP_Gist {
     function __construct() {
 
         // Add shortcode hook.
-        add_shortcode( 'gist', array( $this, 'wp_gist_shortcode' ) );
+        add_shortcode( 'wpgist', array( $this, 'wp_gist_shortcode' ) );
 
         // Register styles.
         add_action( 'wp_enqueue_scripts', array( $this, 'wp_gist_styles' ), 1000 );
@@ -136,14 +136,6 @@ class WP_Gist {
      * @version     2.0.0
      */
     function wp_gist_shortcode( $attributes, $content = null ) {
-
-        // Check for content and if content uses the shortcode.
-        if ( empty( $content ) || has_shortcode( $content, $this->shortcode ) ) {
-
-            // No content or content doesn't have shortcode.
-            return '';
-
-        } // end if
 
         // Extract shortcode attributes.
         extract( shortcode_atts( array( 'url' => '', 'file' => '' ), $attributes ) );

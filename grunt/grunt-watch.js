@@ -5,6 +5,7 @@ module.exports = function (grunt) {
     grunt.config('watch', {
         css: {
             files: [
+                'admin/sass/**/*.scss',
                 'sass/**/*.scss'
             ],
             tasks: [

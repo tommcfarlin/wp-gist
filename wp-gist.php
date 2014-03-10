@@ -15,7 +15,7 @@
  * Plugin URI:          https://github.com/manovotny/wp-gist
  * GitHub Plugin URI:   manovotny/wp-gist
  * Description:         Adds support for GitHub Gist embeds in WordPress.
- * Version:             2.2.0
+ * Version:             3.0.0
  * Author:              Michael Novotny
  * Author URI:          http://manovotny.com
  * Text Domain:         English
@@ -28,7 +28,8 @@
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ CONTENTS /\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\
 
     1. Access
-    3. Instantiation
+    2. Plugin
+    3. Admin
 
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
 */
@@ -43,11 +44,26 @@ if ( ! defined( 'WPINC' ) ) {
 
 } // end if
 
-/* Instantiation
+/* Plugin
 ---------------------------------------------------------------------------------- */
 
-// Include plugin files.
+$plugin = 'WP_Gist';
+
+// Include plugin classes.
 require_once( plugin_dir_path( __FILE__ ) . 'classes/class-wp-gist.php' );
 
-// Create plugin instance.
-WP_Gist::get_instance();
+// Load plugin.
+add_action( 'plugins_loaded', array( $plugin, 'get_instance' ) );
+
+/* Admin
+---------------------------------------------------------------------------------- */
+
+if ( is_admin() && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
+
+    // Include admin classes.
+    require_once( plugin_dir_path( __FILE__ ) . 'admin/classes/class-wp-gist-shortcode-notice.php' );
+
+    // Load admin.
+    add_action( 'plugins_loaded', array( 'WP_Gist_Shortcode_Notice', 'get_instance' ) );
+
+} // end if

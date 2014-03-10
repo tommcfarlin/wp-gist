@@ -4,6 +4,7 @@ module.exports = function (grunt) {
 
     grunt.config('clean', {
         before: [
+            'admin/css',
             'css',
             '<%= config.paths.temp %>'
         ],
