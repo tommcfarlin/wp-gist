@@ -6,7 +6,7 @@
  * @author      Michael Novotny <manovotny@gmail.com>
  * @license     GPL-3.0+
  * @link        https://github.com/manovotny/wp-gist
- * @copyright   2013 Michael Novotny
+ * @copyright   2014 Michael Novotny
  */
 
 /*
@@ -68,13 +68,13 @@ class WP_Gist {
     /**
      * Plugin unique identifier.
      *
-     * @access      protected
+     * @access      public
      * @var         string
      *
      * @since       2.0.0
      * @version     1.0.0
      */
-    protected $slug = 'wp-gist';
+    public $slug = 'wp-gist';
 
     /* Version
     ---------------------------------------------- */
@@ -88,7 +88,7 @@ class WP_Gist {
      * @since       2.0.0
      * @version     1.0.0
      */
-    protected $version = '2.1.0';
+    protected $version = '3.0.0';
 
     /* Constructor
     ---------------------------------------------------------------------------------- */
@@ -101,7 +101,7 @@ class WP_Gist {
     function __construct() {
 
         // Add shortcode hook.
-        add_shortcode( 'gist', array( $this, 'wp_gist_shortcode' ) );
+        add_shortcode( 'wpgist', array( $this, 'wp_gist_shortcode' ) );
 
         // Register styles.
         add_action( 'wp_enqueue_scripts', array( $this, 'wp_gist_styles' ), 1000 );
@@ -120,7 +120,7 @@ class WP_Gist {
     public function wp_gist_styles() {
 
         // Plugin styles.
-        wp_enqueue_style( $this->slug . '-style', plugins_url( $this->slug . '/css/public.css' ), false, $this->version );
+        wp_enqueue_style( $this->slug . '-style', plugins_url( $this->slug . '/css/style.min.css' ), false, $this->version );
 
     } // end wp_gist_styles
 
@@ -138,17 +138,33 @@ class WP_Gist {
     function wp_gist_shortcode( $attributes, $content = null ) {
 
         // Extract shortcode attributes.
-        extract( shortcode_atts( array( 'url' => '', 'file' => '' ), $attributes ) );
+        extract(
+            shortcode_atts(
+                array(
+                    'file' => '',
+                    'id' => '',
+                    'url' => ''
+                ),
+                $attributes
+            )
+        );
 
-        // Check that we at least have a Gist URL.
-        if ( empty( $url ) ) {
+        // Check that we at least have a Gist or id.
+        if ( empty( $id ) && empty( $url ) ) {
 
-            // No Gist URL.
-            return '';
+            // No Gist url or id.
+            return '<!-- Gist url or id is required by [wpgist] shortcode -->';
 
+            // Check if we can use Gist id.
+        } else if ( ! empty( $id ) ) {
+
+            // Set url based on id and append a .js file extension.
+            $url = 'https://gist.github.com/' . $id . '.js';
+
+            // Use Gist url.
         } else {
 
-            // Need to append a '.js' file extension to the Gist URL.
+            // Append a .js file extension.
             $url .= '.js';
 
         } // end if / else
