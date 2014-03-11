@@ -73,7 +73,7 @@ When committing your changes, please make a pull request to the `master` branch,
 
 1. Navigate to the local WP Gist directory via command line
 2. Make sure the `gh-pages` branch is checked out
-3. Run the `jekyll serve --watch --baseurl ''` command to start Jekyll and have it watch for changes, which will auto regenerate pages
+3. Run the `jekyll serve --watch` command to start Jekyll and have it watch for changes, which will auto regenerate pages
 4. Go to [http://localhost:4000/](http://localhost:4000/) in your browser to see the WP Gist GitHub Page
 5. Use `⌃C` (Mac) or `Ctrl+C` (Windows) to stop the local server.
 
