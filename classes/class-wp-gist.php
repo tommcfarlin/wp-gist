@@ -138,17 +138,33 @@ class WP_Gist {
     function wp_gist_shortcode( $attributes, $content = null ) {
 
         // Extract shortcode attributes.
-        extract( shortcode_atts( array( 'url' => '', 'file' => '' ), $attributes ) );
+        extract(
+            shortcode_atts(
+                array(
+                    'file' => '',
+                    'id' => '',
+                    'url' => ''
+                ),
+                $attributes
+            )
+        );
 
-        // Check that we at least have a Gist URL.
-        if ( empty( $url ) ) {
+        // Check that we at least have a Gist or id.
+        if ( empty( $id ) && empty( $url ) ) {
 
-            // No Gist URL.
-            return '<!-- Missing Gist Url -->';
+            // No Gist url or id.
+            return '<!-- Gist url or id is required by [wpgist] shortcode -->';
 
+            // Check if we can use Gist id.
+        } else if ( ! empty( $id ) ) {
+
+            // Set url based on id and append a .js file extension.
+            $url = 'https://gist.github.com/' . $id . '.js';
+
+            // Use Gist url.
         } else {
 
-            // Need to append a '.js' file extension to the Gist URL.
+            // Append a .js file extension.
             $url .= '.js';
 
         } // end if / else

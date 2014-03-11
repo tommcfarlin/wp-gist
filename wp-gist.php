@@ -1,6 +1,6 @@
 <?php
 /**
- * WP Gist.
+ * WP Gist
  *
  * Adds support for GitHub Gist embeds in WordPress.
  *
@@ -47,13 +47,11 @@ if ( ! defined( 'WPINC' ) ) {
 /* Plugin
 ---------------------------------------------------------------------------------- */
 
-$plugin = 'WP_Gist';
-
 // Include plugin classes.
 require_once( plugin_dir_path( __FILE__ ) . 'classes/class-wp-gist.php' );
 
 // Load plugin.
-add_action( 'plugins_loaded', array( $plugin, 'get_instance' ) );
+add_action( 'plugins_loaded', array( 'WP_Gist', 'get_instance' ) );
 
 /* Admin
 ---------------------------------------------------------------------------------- */
