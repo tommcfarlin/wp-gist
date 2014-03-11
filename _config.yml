@@ -1,2 +1,1 @@
-baseurl: 'wp-gist'
 exclude: ['*.iml', 'bower.json', 'bower_components', 'grunt', 'Gruntfile.js', 'grunticon', 'loader.html', 'node_modules', 'package.json', 'preview.html', 'README.md', 'sass', 'src', 'temp']
