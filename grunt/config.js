@@ -9,8 +9,8 @@ module.exports = function (grunt) {
                 temp: 'temp'
             },
             version: {
-                from: '2.1.0',
-                to: '2.2.0'
+                from: '2.2.0',
+                to: '3.0.0'
             }
         }
     });
