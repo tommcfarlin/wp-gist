@@ -15,8 +15,7 @@ module.exports = function (grunt) {
         'concurrent:images',
         'concurrent:js',
         'concurrent:version',
-        'clean:after',
-        'assemble'
+        'clean:after'
     ]);
 
     // CSS.

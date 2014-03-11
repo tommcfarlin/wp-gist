@@ -22,18 +22,9 @@ module.exports = function (grunt) {
                 to: jsonVersion.to
             }]
         },
-        package: {
+        cache: {
             src: [
-                'package.json'
-            ],
-            overwrite: true,
-            replacements: [{
-                from: jsonVersion.from,
-                to: jsonVersion.to
-            }]
-        },
-        head: {
-            src: [
+                '_includes/footer.html',
                 '_includes/head.html'
             ],
             overwrite: true,
@@ -42,14 +33,14 @@ module.exports = function (grunt) {
                 to: cacheVersion.to
             }]
         },
-        footer: {
+        package: {
             src: [
-                '_includes/footer.html'
+                'package.json'
             ],
             overwrite: true,
             replacements: [{
-                from: cacheVersion.from,
-                to: cacheVersion.to
+                from: jsonVersion.from,
+                to: jsonVersion.to
             }]
         }
     });

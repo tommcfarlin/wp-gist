@@ -3,16 +3,6 @@ module.exports = function (grunt) {
     'use strict';
 
     grunt.config('watch', {
-        assemble : {
-            files: [
-                'layouts/**/*.hbs',
-                'pages/**/*.hbs',
-                'partials/**/*.hbs'
-            ],
-            tasks: [
-                'assemble'
-            ]
-        },
         css: {
             files: [
                 '<%= config.paths.bower %>/**/*.scss',
@@ -33,7 +23,7 @@ module.exports = function (grunt) {
         },
         js: {
             files: [
-                'bower.js',
+                'bower.json',
                 '<%= config.paths.bower %>/**/*.js',
                 'grunt/*.js',
                 'Gruntfile.js',
