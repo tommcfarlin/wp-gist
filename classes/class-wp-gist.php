@@ -177,6 +177,13 @@ class WP_Gist {
 
         } // end if
 
+        // Check if Autoptimize is activate & optimizing JS code & not look for scripts in <head> only
+        if ( class_exists( 'autoptimizeCache' ) && get_option( 'autoptimize_js', false ) && ! get_option( 'autoptimize_js_justhead', false ) ) {
+
+            return '<!--noptimize--><script src="' . $url . '"></script><!--/noptimize-->';
+
+        } // end if
+
         // Construct Gist script and return.
         return '<script src="' . $url . '"></script>';
 
