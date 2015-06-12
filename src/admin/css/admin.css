@@ -1,0 +1,20 @@
+.wp-gist-shortcode-notice:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.wp-gist-shortcode-notice {
+  background-color: #fcf3ef;
+  border: 1px solid #e5e5e5;
+  border-left: 4px solid #d54e21;
+  margin: 45px 20px 0 0;
+  padding: 10px; }
+  .wp-gist-shortcode-notice .message {
+    display: inline-block;
+    float: left;
+    margin-top: 5px; }
+  .wp-gist-shortcode-notice .learn-more {
+    display: inline-block;
+    margin-left: 5px; }
+  .wp-gist-shortcode-notice .button {
+    float: right; }

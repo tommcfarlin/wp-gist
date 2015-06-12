@@ -1,0 +1,13 @@
+.gist {
+  font-size: 14px; }
+  .gist pre.line-pre {
+    white-space: pre !important; }
+  .gist table {
+    border: none !important;
+    margin: 0 !important; }
+    .gist table td {
+      line-height: 20px !important; }
+  .gist .gist-file .gist-data .line-numbers {
+    border: 0; }
+  .gist .line-data {
+    border: 0; }

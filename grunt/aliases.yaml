@@ -1,0 +1,56 @@
+# Default
+#----------------------------------------------------------------------------------
+
+default:
+  - build
+
+# Setup
+#----------------------------------------------------------------------------------
+
+init:
+  - replace
+  - rename
+  - shell:init
+  - build
+
+refresh:
+  - shell:refresh
+
+update:
+  - shell:update
+  - build
+
+upgrade:
+  - shell:upgrade
+
+# Build
+#----------------------------------------------------------------------------------
+
+build:
+  - clean:build
+  - curl
+  - lint
+  - test
+  - css
+
+lint:
+  - jshint
+  - jscs
+  - phplint
+  - scsslint
+
+test:
+  - phpunit
+
+css:
+  - sass
+  - autoprefixer
+  - cssmin
+
+# Release
+#----------------------------------------------------------------------------------
+
+release:
+  - build
+  - replace:project_version
+  - replace:update_project

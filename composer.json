@@ -1,0 +1,45 @@
+{
+    "name": "manovotny/wp-gist",
+    "version": "3.0.0",
+    "description": "Adds support for GitHub Gist embeds in WordPress.",
+    "type": "library",
+    "homepage": "https://github.com/manovotny/wp-gist",
+    "authors": [
+        {
+            "name": "Michael Novotny",
+            "email": "manovotny@gmail.com",
+            "homepage": "http://manovotny.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "GPL-3.0+",
+    "keywords": [
+        "code",
+        "gist",
+        "github",
+        "wordpress"
+    ],
+    "require": {
+
+    },
+    "require-dev": {
+        "manovotny/wp-enqueue-util": "~1.1",
+        "manovotny/wp-phpunit-helpers": "~1.0",
+        "phpunit/phpunit": "4.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src"
+        ],
+        "files": [
+            "wp-gist.php"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "vendor/phpunit",
+            "vendor/sebastian",
+            "vendor/symfony"
+        ]
+    }
+}

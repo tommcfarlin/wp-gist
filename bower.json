@@ -1,0 +1,26 @@
+{
+    "name": "wp-gist",
+    "version": "3.0.0",
+    "description": "Adds support for GitHub Gist embeds in WordPress.",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/manovotny/wp-gist.git"
+    },
+    "keywords": [
+        "code",
+        "gist",
+        "github",
+        "wordpress"
+    ],
+    "authors": [
+        {
+            "name": "Michael Novotny",
+            "email": "manovotny@gmail.com",
+            "homepage": "http://manovotny.com"
+        }
+    ],
+    "devDependencies": {
+        "sass-lint-config": "git://github.com/manovotny/sass-lint-config.git#0.1.0",
+        "scut": "~1.0.1"
+    }
+}

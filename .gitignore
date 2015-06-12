@@ -1,12 +1,8 @@
-# IntelliJ
-.idea
 *.iml
-
-# Node
-node_modules
-
-# OS X
 .DS_Store
-
-# PHP
-*.log
+.idea
+bower_components
+config/runtime.json
+curl_downloads
+node_modules
+vendor

@@ -9,26 +9,28 @@ module.exports = function (grunt) {
         sitePath = config.paths.source + '/site/css',
 
         baseTask = {
-            options: {
-                keepSpecialComments: 0
-            },
             expand: true,
-            src: [
-                '*.css',
-                '!*.min.css'
-            ],
-            ext: '.min.css'
+            flatten: true
         },
+
         adminTask = _.extend({
-            cwd: adminPath,
+            src: adminPath + '/**/*.css',
             dest: adminPath
         }, baseTask),
+
         siteTask = _.extend({
-            cwd: sitePath,
+            src: sitePath + '/**/*.css',
             dest: sitePath
         }, baseTask);
 
-    grunt.config('cssmin', {
+    grunt.config('autoprefixer', {
+        options: {
+            browsers: [
+                'last 2 versions',
+                'ie 8',
+                'ie 9'
+            ]
+        },
         admin: adminTask,
         site: siteTask
     });
