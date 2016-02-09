@@ -37,7 +37,7 @@ lint:
   - jshint
   - jscs
   - phplint
-  - scsslint
+  - sasslint
 
 test:
   - phpunit

@@ -3,7 +3,7 @@
   .gist pre.line-pre {
     white-space: pre !important; }
   .gist table {
-    border: none !important;
+    border: 0 !important;
     margin: 0 !important; }
     .gist table td {
       line-height: 20px !important; }

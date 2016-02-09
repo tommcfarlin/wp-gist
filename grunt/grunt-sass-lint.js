@@ -15,16 +15,21 @@ module.exports = function (grunt) {
     if (!_.isEmpty(files)) {
         task = {
             options: {
-                config: 'config/.scss-lint.yml'
+                rules: {
+                    'force-element-nesting': [0],
+                    'no-important': [0],
+                    'no-qualifying-elements': [0],
+                    indentation: [1, {
+                        size: 4
+                    }]
+                }
             },
-            src: [
+            target: [
                 source
             ]
         };
     }
 
-    grunt.config('scsslint', {
-        sass: task
-    });
+    grunt.config('sasslint', task);
 
 };

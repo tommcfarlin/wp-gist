@@ -2,18 +2,15 @@
 // themes respect the explicit styles needed to make Gist's look good inside of
 // WordPress.
 
-// scss-lint:disable ImportantRule
 .gist {
     font-size: 14px;
 
-    // scss-lint:disable QualifyingElement
     pre.line-pre {
         white-space: pre !important;
     }
-    // scss-lint:enable QualifyingElement
 
     table {
-        border: none !important;
+        border: 0 !important;
         margin: 0 !important;
 
         td {
@@ -21,11 +18,9 @@
         }
     }
 
-    // scss-lint:disable SelectorDepth
     .gist-file .gist-data .line-numbers {
         border: 0;
     }
-    // scss-lint:enable SelectorDepth
 
     .line-data {
         border: 0;

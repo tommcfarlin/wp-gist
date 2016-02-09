@@ -1,6 +1,0 @@
-inherit_from: '../bower_components/sass-lint-config/.scss-lint.yml'
-
-linters:
-  Indentation:
-    enabled: true
-    width: 4
