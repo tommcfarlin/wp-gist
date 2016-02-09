@@ -20,7 +20,7 @@ class WP_Gist_Enqueue_Styles {
      */
     function __construct() {
 
-        add_action( 'wp_enqueue_scripts', array( $this, '__enqueue_styles' ), 1000 );
+        add_action( 'wp_enqueue_scripts', array( $this, '__enqueue_styles' ), PHP_INT_MAX );
 
     }
 
@@ -57,8 +57,8 @@ class WP_Gist_Enqueue_Styles {
 
         $handle = $wp_gist->get_slug() . '-styles';
         $relative_path = __DIR__ . '/../site/css/';
-        $filename = 'site.min.css';
-        $filename_debug = 'site.css';
+        $filename = 'style.min.css';
+        $filename_debug = 'style.css';
         $dependencies = array();
         $version = $wp_gist->get_version();
 
