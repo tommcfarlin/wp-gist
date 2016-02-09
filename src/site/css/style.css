@@ -5,6 +5,8 @@
   .gist table {
     border: 0 !important;
     margin: 0 !important; }
+    .gist table * {
+      font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; }
     .gist table td {
       line-height: 20px !important; }
   .gist .gist-file .gist-data .line-numbers {

@@ -13,6 +13,10 @@
         border: 0 !important;
         margin: 0 !important;
 
+        * {
+            font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+        }
+
         td {
             line-height: 20px !important;
         }
