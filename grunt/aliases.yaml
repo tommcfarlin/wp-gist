@@ -52,5 +52,9 @@ css:
 
 release:
   - build
+  - clean:release
   - replace:project_version
   - replace:update_project
+  - shell:release
+  - copy:release
+  - shell:reset

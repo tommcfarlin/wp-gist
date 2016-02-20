@@ -4,5 +4,6 @@
 bower_components
 config/runtime.json
 curl_downloads
+dist
 node_modules
 vendor

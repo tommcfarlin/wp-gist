@@ -20,10 +20,9 @@
         "wordpress"
     ],
     "require": {
-
+        "manovotny/wp-enqueue-util": "~1.1"
     },
     "require-dev": {
-        "manovotny/wp-enqueue-util": "~1.1",
         "manovotny/wp-phpunit-helpers": "~1.0",
         "phpunit/phpunit": "4.1.*"
     },
