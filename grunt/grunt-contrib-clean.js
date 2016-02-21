@@ -2,14 +2,15 @@ module.exports = function (grunt) {
 
     'use strict';
 
+    var config = require('config');
+
     grunt.config('clean', {
-        before: [
-            'admin/css',
-            'css',
-            '<%= config.paths.temp %>'
+        build: [
+            config.paths.source + '/**/css',
+            config.paths.source + '/**/' + config.files.browserify + '.*.js'
         ],
-        after: [
-            '<%= config.paths.temp %>'
+        release: [
+            'dist'
         ]
     });
 

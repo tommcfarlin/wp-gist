@@ -1,0 +1,119 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "f05cd53df036406e1dd6f23fec393687",
+    "content-hash": "f559629d0eee0e82d12b689c26596bb0",
+    "packages": [
+        {
+            "name": "manovotny/wp-enqueue-util",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/manovotny/wp-enqueue-util.git",
+                "reference": "2d59935238634c1274e08f465dc59dd65adf2c1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/manovotny/wp-enqueue-util/zipball/2d59935238634c1274e08f465dc59dd65adf2c1f",
+                "reference": "2d59935238634c1274e08f465dc59dd65adf2c1f",
+                "shasum": ""
+            },
+            "require": {
+                "manovotny/wp-url-util": "~2.0"
+            },
+            "require-dev": {
+                "manovotny/wp-phpunit-helpers": "~1.0",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ],
+                "files": [
+                    "wp-enqueue-util.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Novotny",
+                    "email": "manovotny@gmail.com",
+                    "homepage": "http://manovotny.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A convenient enqueuing utility for WordPress.",
+            "keywords": [
+                "css",
+                "enqueue",
+                "javascript",
+                "scripts",
+                "wordpress"
+            ],
+            "time": "2014-12-28 05:44:52"
+        },
+        {
+            "name": "manovotny/wp-url-util",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/manovotny/wp-url-util.git",
+                "reference": "3d656e849bb77e14003fbdd65dfa64d8b1b184cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/manovotny/wp-url-util/zipball/3d656e849bb77e14003fbdd65dfa64d8b1b184cd",
+                "reference": "3d656e849bb77e14003fbdd65dfa64d8b1b184cd",
+                "shasum": ""
+            },
+            "require-dev": {
+                "manovotny/wp-phpunit-helpers": "~1.0",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ],
+                "files": [
+                    "wp-url-util.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Novotny",
+                    "email": "manovotny@gmail.com",
+                    "homepage": "http://manovotny.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A url utility for WordPress.",
+            "homepage": "https://github.com/manovotny/wp-url-util",
+            "keywords": [
+                "url",
+                "utility",
+                "wordpress"
+            ],
+            "time": "2014-12-12 17:59:35"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

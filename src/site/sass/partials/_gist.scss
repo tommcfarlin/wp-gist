@@ -1,0 +1,32 @@
+// Really hate using `!important`, but there is no better way to ensure that all
+// themes respect the explicit styles needed to make Gist's look good inside of
+// WordPress.
+
+.gist {
+    font-size: 14px;
+
+    pre.line-pre {
+        white-space: pre !important;
+    }
+
+    table {
+        border: 0 !important;
+        margin: 0 !important;
+
+        * {
+            font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+        }
+
+        td {
+            line-height: 20px !important;
+        }
+    }
+
+    .gist-file .gist-data .line-numbers {
+        border: 0;
+    }
+
+    .line-data {
+        border: 0;
+    }
+}
