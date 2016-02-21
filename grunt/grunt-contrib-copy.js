@@ -10,9 +10,9 @@ module.exports = function (grunt) {
                     src: [
                         'src/**',
                         'vendor/**',
-                        '*.md',
                         '*.php',
-                        'LICENSE'
+                        'LICENSE',
+                        'README.md'
                     ],
                     dest: 'dist'
                 }
