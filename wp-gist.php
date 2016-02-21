@@ -3,7 +3,7 @@
  * Plugin Name: WP Gist
  * Plugin URI: https://github.com/manovotny/wp-gist
  * Description: Adds support for GitHub Gist embeds in WordPress.
- * Version: 3.0.0
+ * Version: 3.1.0
  * Author: Michael Novotny
  * Author URI: http://manovotny.com
  * License: GPL-3.0+

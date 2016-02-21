@@ -19,7 +19,7 @@ module.exports = (function () {
             name: 'WP Gist',
             slug: 'wp-gist',
             url: 'https://github.com/manovotny/wp-gist',
-            version: '3.0.0'
+            version: '3.1.0'
         },
         translations: {
             domain: 'wp-gist',

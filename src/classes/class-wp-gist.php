@@ -24,7 +24,7 @@ class WP_Gist {
      *
      * Used for cache-busting of style and script file references.
      */
-    protected $version = '3.0.0';
+    protected $version = '3.1.0';
 
     /* Public
     ---------------------------------------------------------------------------------- */

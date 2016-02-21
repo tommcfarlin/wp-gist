@@ -28,7 +28,7 @@ module.exports = (function () {
             slug: 'wp-gist',
             type: 'plugin', // Should be `plugin` or `theme`.
             url: 'https://github.com/manovotny/wp-gist',
-            version: '3.0.0'
+            version: '3.1.0'
         }
     };
 

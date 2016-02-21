@@ -1,6 +1,6 @@
 {
     "name": "manovotny/wp-gist",
-    "version": "3.0.0",
+    "version": "3.1.0",
     "description": "Adds support for GitHub Gist embeds in WordPress.",
     "type": "library",
     "homepage": "https://github.com/manovotny/wp-gist",
