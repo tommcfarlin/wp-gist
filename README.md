@@ -6,7 +6,7 @@ WP Gist adds support for [GitHub Gist](https://gist.github.com/) embeds in [Word
 
 ## Documentation & Installation
 
-Please visit the [WP Gist](http://manovotny.github.io/wp-gist/) website for a full description of features and installation.
+Please visit the [WP Gist](http://tommcfarlin.github.io/wp-gist/) website for a full description of features and installation.
 
 ## Contributing
 
